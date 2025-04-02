@@ -1,5 +1,5 @@
 {
-	"name": "TechStockSource",
+	"name": "QQQStockSource",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "TechStockHttpServer2",

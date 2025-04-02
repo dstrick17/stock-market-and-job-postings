@@ -1,5 +1,5 @@
 {
-	"name": "TechStockSink",
+	"name": "QQQStockSink",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLakeStorage1",

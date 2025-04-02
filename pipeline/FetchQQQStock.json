@@ -38,13 +38,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "TechStockSource",
+						"referenceName": "QQQStockSource",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "TechStockSink",
+						"referenceName": "QQQStockSink",
 						"type": "DatasetReference"
 					}
 				]
