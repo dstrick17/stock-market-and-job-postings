@@ -1,0 +1,22 @@
+{
+	"name": "TechStockSource",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "TechStockHttpServer2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "?function=TIME_SERIES_DAILY&symbol=QQQ&apikey=QUGD4YMIKXMCP391",
+					"type": "Expression"
+				}
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
