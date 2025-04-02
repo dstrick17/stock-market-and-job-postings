@@ -212,14 +212,14 @@
 						},
 						"inputs": [
 							{
-								"referenceName": "TechStockSource",
+								"referenceName": "QQQStockSource",
 								"type": "DatasetReference",
 								"parameters": {}
 							}
 						],
 						"outputs": [
 							{
-								"referenceName": "TechStockSink",
+								"referenceName": "QQQStockSink",
 								"type": "DatasetReference",
 								"parameters": {}
 							}
@@ -233,8 +233,8 @@
 				"lastPublishTime": "2025-04-02T12:33:33Z"
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/datasets/TechStockSource')]",
-				"[concat(variables('factoryId'), '/datasets/TechStockSink')]"
+				"[concat(variables('factoryId'), '/datasets/QQQStockSource')]",
+				"[concat(variables('factoryId'), '/datasets/QQQStockSink')]"
 			]
 		},
 		{
@@ -331,7 +331,7 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/TechStockSink')]",
+			"name": "[concat(parameters('factoryName'), '/QQQStockSink')]",
 			"type": "Microsoft.DataFactory/factories/datasets",
 			"apiVersion": "2018-06-01",
 			"properties": {
@@ -355,7 +355,7 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/TechStockSource')]",
+			"name": "[concat(parameters('factoryName'), '/QQQStockSource')]",
 			"type": "Microsoft.DataFactory/factories/datasets",
 			"apiVersion": "2018-06-01",
 			"properties": {
