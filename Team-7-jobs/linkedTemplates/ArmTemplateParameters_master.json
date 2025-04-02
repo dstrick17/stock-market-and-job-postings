@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "Team-7-jobs"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"JobsAzureBlobStorage_connectionString": {
+			"value": ""
+		},
+		"AlphaStockServer_properties_typeProperties_url": {
+			"value": "https://www.alphavantage.co/query"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://team7storageacc.dfs.core.windows.net/"
+		},
+		"HttpServer1_properties_typeProperties_url": {
+			"value": "https://api.adzuna.com/v1/api/jobs/us/search/1"
+		},
+		"TechStockHttpServer2_properties_typeProperties_url": {
+			"value": "https://www.alphavantage.co/query"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
