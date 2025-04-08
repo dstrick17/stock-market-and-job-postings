@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "HttpServerLocation",
-				"relativeUrl": "?function=TIME_SERIES_DAILY&symbol=AAPL&apikey=QUGD4YMIKXMCP391"
+				"relativeUrl": "?function=TIME_SERIES_DAILY&symbol=XLV&apikey=QUGD4YMIKXMCP391"
 			}
 		},
 		"schema": {}
