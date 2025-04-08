@@ -1,0 +1,18 @@
+{
+	"name": "XLVStockSource",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "XLVHttpServer3",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "?function=TIME_SERIES_DAILY&symbol=AAPL&apikey=QUGD4YMIKXMCP391"
+			}
+		},
+		"schema": {}
+	}
+}
