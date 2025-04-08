@@ -1,0 +1,19 @@
+{
+	"name": "XLFStockSink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "Bronze/stock_data",
+				"fileSystem": "team7container"
+			}
+		},
+		"schema": {}
+	}
+}
