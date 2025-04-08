@@ -20,7 +20,13 @@
 		"HttpServer1_properties_typeProperties_url": {
 			"value": "https://api.adzuna.com/v1/api/jobs/us/search/1"
 		},
+		"HttpServer2_properties_typeProperties_url": {
+			"value": "https://www.alphavantage.co/query"
+		},
 		"TechStockHttpServer2_properties_typeProperties_url": {
+			"value": "https://www.alphavantage.co/query"
+		},
+		"XLVHttpServer3_properties_typeProperties_url": {
 			"value": "https://www.alphavantage.co/query"
 		}
 	}

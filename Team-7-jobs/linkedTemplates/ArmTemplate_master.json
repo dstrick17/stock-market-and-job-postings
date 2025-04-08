@@ -27,7 +27,15 @@
 			"type": "string",
 			"defaultValue": "https://api.adzuna.com/v1/api/jobs/us/search/1"
 		},
+		"HttpServer2_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://www.alphavantage.co/query"
+		},
 		"TechStockHttpServer2_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://www.alphavantage.co/query"
+		},
+		"XLVHttpServer3_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://www.alphavantage.co/query"
 		},
@@ -73,12 +81,38 @@
 					"HttpServer1_properties_typeProperties_url": {
 						"value": "[parameters('HttpServer1_properties_typeProperties_url')]"
 					},
+					"HttpServer2_properties_typeProperties_url": {
+						"value": "[parameters('HttpServer2_properties_typeProperties_url')]"
+					},
 					"TechStockHttpServer2_properties_typeProperties_url": {
 						"value": "[parameters('TechStockHttpServer2_properties_typeProperties_url')]"
+					},
+					"XLVHttpServer3_properties_typeProperties_url": {
+						"value": "[parameters('XLVHttpServer3_properties_typeProperties_url')]"
 					}
 				}
 			},
 			"dependsOn": []
+		},
+		{
+			"name": "Team-7-jobs_ArmTemplate_1",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2024-03-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_1.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					}
+				}
+			},
+			"dependsOn": [
+				"[resourceId('Microsoft.Resources/deployments', 'Team-7-jobs_ArmTemplate_0')]"
+			]
 		}
 	]
 }
