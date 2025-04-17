@@ -9,7 +9,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@array(['QQQ', 'XLF', 'XLV', 'AAPL', 'MSFT', 'GOOGL', 'AMZN', 'TSLA', 'NVDA', 'META', 'INTC', 'JNJ', 'PFE', 'MRK', 'UNH', 'ABT', 'CVS', 'MDT', 'JPM', 'BAC', 'GS', 'MS', 'WFC', 'AXP', 'C'])",
+						"value": "@variables('test')",
 						"type": "Expression"
 					},
 					"activities": [
@@ -67,6 +67,14 @@
 				}
 			}
 		],
+		"variables": {
+			"test": {
+				"type": "Array",
+				"defaultValue": [
+					"['QQQ', 'XLF', 'XLV', 'AAPL', 'MSFT', 'GOOGL', 'AMZN','TSLA', 'NVDA', 'META', 'INTC', 'JNJ', 'PFE', 'MRK', 'UNH', 'ABT', 'CVS', 'MDT', 'JPM', 'BAC', 'GS', 'MS', 'WFC', 'AXP', 'C']"
+				]
+			}
+		},
 		"annotations": [],
 		"lastPublishTime": "2025-03-21T17:02:53Z"
 	},
