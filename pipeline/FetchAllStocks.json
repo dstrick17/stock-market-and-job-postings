@@ -9,7 +9,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@array(['QQQ', 'XLF', 'XLV', 'AAPL', 'MSFT', 'GOOGL', 'AMZN', 'TSLA', 'NVDA', 'META', 'INTC',\n        'JNJ', 'PFE', 'MRK', 'UNH', 'ABT', 'CVS', 'MDT',\n        'JPM', 'BAC', 'GS', 'MS', 'WFC', 'AXP', 'C'])\n",
+						"value": "@array(['QQQ', 'XLF', 'XLV', 'AAPL', 'MSFT', 'GOOGL', 'AMZN', 'TSLA', 'NVDA', 'META', 'INTC', 'JNJ', 'PFE', 'MRK', 'UNH', 'ABT', 'CVS', 'MDT', 'JPM', 'BAC', 'GS', 'MS', 'WFC', 'AXP', 'C'])",
 						"type": "Expression"
 					},
 					"activities": [
