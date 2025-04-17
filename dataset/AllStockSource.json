@@ -1,5 +1,5 @@
 {
-	"name": "AppleStockSource",
+	"name": "AllStockSource",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AlphaStockServer",
@@ -10,7 +10,10 @@
 		"typeProperties": {
 			"location": {
 				"type": "HttpServerLocation",
-				"relativeUrl": "?function=TIME_SERIES_DAILY&symbol=@{item()}&apikey=QUGD4YMIKXMCP391"
+				"relativeUrl": {
+					"value": "@concat('?function=TIME_SERIES_DAILY&symbol=', item(), '&apikey=QUGD4YMIKXMCP391')\n",
+					"type": "Expression"
+				}
 			}
 		},
 		"schema": {}
