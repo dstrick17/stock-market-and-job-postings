@@ -112,59 +112,75 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/FetchAppleStock')]",
+			"name": "[concat(parameters('factoryName'), '/FetchAllStocks')]",
 			"type": "Microsoft.DataFactory/factories/pipelines",
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"activities": [
 					{
-						"name": "Copy data1",
-						"type": "Copy",
+						"name": "ForEach1",
+						"type": "ForEach",
 						"dependsOn": [],
-						"policy": {
-							"timeout": "0.12:00:00",
-							"retry": 0,
-							"retryIntervalInSeconds": 30,
-							"secureOutput": false,
-							"secureInput": false
-						},
 						"userProperties": [],
 						"typeProperties": {
-							"source": {
-								"type": "JsonSource",
-								"storeSettings": {
-									"type": "HttpReadSettings",
-									"requestMethod": "GET"
-								},
-								"formatSettings": {
-									"type": "JsonReadSettings"
-								}
+							"items": {
+								"value": "@array(['QQQ', 'XLF', 'XLV', 'AAPL', 'MSFT', 'GOOGL', 'AMZN', 'TSLA', 'NVDA', 'META', 'INTC',\n        'JNJ', 'PFE', 'MRK', 'UNH', 'ABT', 'CVS', 'MDT',\n        'JPM', 'BAC', 'GS', 'MS', 'WFC', 'AXP', 'C'])\n",
+								"type": "Expression"
 							},
-							"sink": {
-								"type": "JsonSink",
-								"storeSettings": {
-									"type": "AzureBlobFSWriteSettings"
-								},
-								"formatSettings": {
-									"type": "JsonWriteSettings"
+							"activities": [
+								{
+									"name": "Copy data2",
+									"type": "Copy",
+									"dependsOn": [],
+									"policy": {
+										"timeout": "0.12:00:00",
+										"retry": 0,
+										"retryIntervalInSeconds": 30,
+										"secureOutput": false,
+										"secureInput": false
+									},
+									"userProperties": [],
+									"typeProperties": {
+										"source": {
+											"type": "JsonSource",
+											"storeSettings": {
+												"type": "HttpReadSettings",
+												"requestMethod": "GET"
+											},
+											"formatSettings": {
+												"type": "JsonReadSettings"
+											}
+										},
+										"sink": {
+											"type": "JsonSink",
+											"storeSettings": {
+												"type": "AzureBlobFSWriteSettings"
+											},
+											"formatSettings": {
+												"type": "JsonWriteSettings"
+											}
+										},
+										"enableStaging": false
+									},
+									"inputs": [
+										{
+											"referenceName": "AllStockSource",
+											"type": "DatasetReference",
+											"parameters": {
+												"stockSymbol": "@item()"
+											}
+										}
+									],
+									"outputs": [
+										{
+											"referenceName": "AllStockSink",
+											"type": "DatasetReference",
+											"parameters": {}
+										}
+									]
 								}
-							},
-							"enableStaging": false
-						},
-						"inputs": [
-							{
-								"referenceName": "AppleStockSource",
-								"type": "DatasetReference",
-								"parameters": {}
-							}
-						],
-						"outputs": [
-							{
-								"referenceName": "AppleStockSink",
-								"type": "DatasetReference",
-								"parameters": {}
-							}
-						]
+							]
+						}
 					}
 				],
 				"policy": {
@@ -174,8 +190,8 @@
 				"lastPublishTime": "2025-03-21T17:02:53Z"
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/datasets/AppleStockSource')]",
-				"[concat(variables('factoryId'), '/datasets/AppleStockSink')]"
+				"[concat(variables('factoryId'), '/datasets/AllStockSource')]",
+				"[concat(variables('factoryId'), '/datasets/AllStockSink')]"
 			]
 		},
 		{
@@ -424,7 +440,7 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/AppleStockSink')]",
+			"name": "[concat(parameters('factoryName'), '/AllStockSink')]",
 			"type": "Microsoft.DataFactory/factories/datasets",
 			"apiVersion": "2018-06-01",
 			"properties": {
@@ -437,7 +453,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobFSLocation",
-						"folderPath": "Bronze/stock_data",
+						"folderPath": "Bronze/batch_stock_data",
 						"fileSystem": "team7container"
 					}
 				},
@@ -448,7 +464,7 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/AppleStockSource')]",
+			"name": "[concat(parameters('factoryName'), '/AllStockSource')]",
 			"type": "Microsoft.DataFactory/factories/datasets",
 			"apiVersion": "2018-06-01",
 			"properties": {
@@ -456,12 +472,20 @@
 					"referenceName": "AlphaStockServer",
 					"type": "LinkedServiceReference"
 				},
+				"parameters": {
+					"stockSymbol": {
+						"type": "string"
+					}
+				},
 				"annotations": [],
 				"type": "Json",
 				"typeProperties": {
 					"location": {
 						"type": "HttpServerLocation",
-						"relativeUrl": "?function=TIME_SERIES_DAILY&symbol=AAPL&apikey=QUGD4YMIKXMCP391"
+						"relativeUrl": {
+							"value": "@concat('?function=TIME_SERIES_DAILY&symbol=', dataset().stockSymbol, '&apikey=QUGD4YMIKXMCP391')\n\n",
+							"type": "Expression"
+						}
 					}
 				},
 				"schema": {}
