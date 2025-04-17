@@ -16,7 +16,7 @@
 			"location": {
 				"type": "HttpServerLocation",
 				"relativeUrl": {
-					"value": "@concat('?function=TIME_SERIES_DAILY&symbol=', dataset().stockSymbol, '&apikey=QUGD4YMIKXMCP391')\n\n",
+					"value": "@concat('?function=TIME_SERIES_DAILY&symbol=', dataset().stockSymbol, '&apikey=20OGX3XJRKXZRBB0')\n\n",
 					"type": "Expression"
 				}
 			}
