@@ -1,5 +1,5 @@
 {
-	"name": "FetchAppleStock",
+	"name": "FetchAllStocks",
 	"properties": {
 		"activities": [
 			{
@@ -48,6 +48,12 @@
 						"type": "DatasetReference"
 					}
 				]
+			},
+			{
+				"name": "ForEach1",
+				"type": "ForEach",
+				"dependsOn": [],
+				"userProperties": []
 			}
 		],
 		"annotations": [],
