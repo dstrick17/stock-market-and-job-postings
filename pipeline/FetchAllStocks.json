@@ -9,7 +9,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "[\n  \"QQQ\",\n  \"XLF\",\n  \"XLV\",\n  \"AAPL\",\n  \"MSFT\",\n  \"GOOGL\",\n  \"AMZN\",\n  \"TSLA\",\n  \"NVDA\",\n  \"META\",\n  \"INTC\",\n  \"JNJ\",\n  \"PFE\",\n  \"MRK\",\n  \"UNH\",\n  \"ABT\",\n  \"CVS\",\n  \"MDT\",\n  \"JPM\",\n  \"BAC\",\n  \"GS\",\n  \"MS\",\n  \"WFC\",\n  \"AXP\",\n  \"C\"\n]\n",
+						"value": "@array(['QQQ', 'XLF', 'XLV', 'AAPL', 'MSFT', 'GOOGL', 'AMZN', 'TSLA', 'NVDA', 'META', 'INTC',\n        'JNJ', 'PFE', 'MRK', 'UNH', 'ABT', 'CVS', 'MDT',\n        'JPM', 'BAC', 'GS', 'MS', 'WFC', 'AXP', 'C'])\n",
 						"type": "Expression"
 					},
 					"activities": [
@@ -65,53 +65,6 @@
 						}
 					]
 				}
-			},
-			{
-				"name": "Copy data1_copy1",
-				"type": "Copy",
-				"dependsOn": [],
-				"policy": {
-					"timeout": "0.12:00:00",
-					"retry": 0,
-					"retryIntervalInSeconds": 30,
-					"secureOutput": false,
-					"secureInput": false
-				},
-				"userProperties": [],
-				"typeProperties": {
-					"source": {
-						"type": "JsonSource",
-						"storeSettings": {
-							"type": "HttpReadSettings",
-							"requestMethod": "GET"
-						},
-						"formatSettings": {
-							"type": "JsonReadSettings"
-						}
-					},
-					"sink": {
-						"type": "JsonSink",
-						"storeSettings": {
-							"type": "AzureBlobFSWriteSettings"
-						},
-						"formatSettings": {
-							"type": "JsonWriteSettings"
-						}
-					},
-					"enableStaging": false
-				},
-				"inputs": [
-					{
-						"referenceName": "AllStockSource",
-						"type": "DatasetReference"
-					}
-				],
-				"outputs": [
-					{
-						"referenceName": "AllStockSink",
-						"type": "DatasetReference"
-					}
-				]
 			}
 		],
 		"annotations": [],
