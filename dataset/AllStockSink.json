@@ -1,5 +1,5 @@
 {
-	"name": "AppleStockSink",
+	"name": "AllStockSink",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLakeStorage1",
