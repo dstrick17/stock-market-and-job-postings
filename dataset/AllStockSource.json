@@ -11,7 +11,7 @@
 			"location": {
 				"type": "HttpServerLocation",
 				"relativeUrl": {
-					"value": "?function=TIME_SERIES_DAILY&symbol=PFE&apikey=QUGD4YMIKXMCP391\n\n",
+					"value": "?function=TIME_SERIES_DAILY&symbol=MRK&apikey=QUGD4YMIKXMCP391\n\n",
 					"type": "Expression"
 				}
 			}
