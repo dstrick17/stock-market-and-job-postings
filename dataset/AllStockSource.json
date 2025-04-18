@@ -5,18 +5,13 @@
 			"referenceName": "AlphaStockServer",
 			"type": "LinkedServiceReference"
 		},
-		"parameters": {
-			"stockSymbol": {
-				"type": "string"
-			}
-		},
 		"annotations": [],
 		"type": "Json",
 		"typeProperties": {
 			"location": {
 				"type": "HttpServerLocation",
 				"relativeUrl": {
-					"value": "@concat('?function=TIME_SERIES_DAILY&symbol=', dataset().stockSymbol, '&apikey=20OGX3XJRKXZRBB0')\n\n",
+					"value": "?function=TIME_SERIES_DAILY&symbol=QQQ&apikey=QUGD4YMIKXMCP391\n\n",
 					"type": "Expression"
 				}
 			}

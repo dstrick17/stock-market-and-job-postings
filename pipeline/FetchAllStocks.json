@@ -3,68 +3,51 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "ForEach1",
-				"type": "ForEach",
+				"name": "Copy data1",
+				"type": "Copy",
 				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
 				"userProperties": [],
 				"typeProperties": {
-					"items": {
-						"value": "@variables('test')",
-						"type": "Expression"
-					},
-					"activities": [
-						{
-							"name": "Copy data2",
-							"type": "Copy",
-							"dependsOn": [],
-							"policy": {
-								"timeout": "0.12:00:00",
-								"retry": 0,
-								"retryIntervalInSeconds": 30,
-								"secureOutput": false,
-								"secureInput": false
-							},
-							"userProperties": [],
-							"typeProperties": {
-								"source": {
-									"type": "JsonSource",
-									"storeSettings": {
-										"type": "HttpReadSettings",
-										"requestMethod": "GET"
-									},
-									"formatSettings": {
-										"type": "JsonReadSettings"
-									}
-								},
-								"sink": {
-									"type": "JsonSink",
-									"storeSettings": {
-										"type": "AzureBlobFSWriteSettings"
-									},
-									"formatSettings": {
-										"type": "JsonWriteSettings"
-									}
-								},
-								"enableStaging": false
-							},
-							"inputs": [
-								{
-									"referenceName": "AllStockSource",
-									"type": "DatasetReference",
-									"parameters": {
-										"stockSymbol": "@item()"
-									}
-								}
-							],
-							"outputs": [
-								{
-									"referenceName": "AllStockSink",
-									"type": "DatasetReference"
-								}
-							]
+					"source": {
+						"type": "JsonSource",
+						"storeSettings": {
+							"type": "HttpReadSettings",
+							"requestMethod": "GET"
+						},
+						"formatSettings": {
+							"type": "JsonReadSettings"
 						}
-					]
-				}
+					},
+					"sink": {
+						"type": "JsonSink",
+						"storeSettings": {
+							"type": "AzureBlobFSWriteSettings"
+						},
+						"formatSettings": {
+							"type": "JsonWriteSettings"
+						}
+					},
+					"enableStaging": false
+				},
+				"inputs": [
+					{
+						"referenceName": "AllStockSource",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "AllStockSink",
+						"type": "DatasetReference"
+					}
+				]
 			}
 		],
 		"variables": {
