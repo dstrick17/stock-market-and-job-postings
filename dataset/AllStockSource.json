@@ -11,7 +11,7 @@
 			"location": {
 				"type": "HttpServerLocation",
 				"relativeUrl": {
-					"value": "?function=TIME_SERIES_DAILY&symbol=META&apikey=QUGD4YMIKXMCP391\n\n",
+					"value": "?function=TIME_SERIES_DAILY&symbol=INTC&apikey=QUGD4YMIKXMCP391\n\n",
 					"type": "Expression"
 				}
 			}
