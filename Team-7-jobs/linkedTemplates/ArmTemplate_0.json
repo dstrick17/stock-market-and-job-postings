@@ -284,7 +284,7 @@
 					"location": {
 						"type": "HttpServerLocation",
 						"relativeUrl": {
-							"value": "?function=TIME_SERIES_DAILY&symbol=QQQ&apikey=QUGD4YMIKXMCP391",
+							"value": "?function=TIME_SERIES_DAILY&symbol=XLF&apikey=QUGD4YMIKXMCP391",
 							"type": "Expression"
 						}
 					}
