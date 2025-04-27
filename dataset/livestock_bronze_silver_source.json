@@ -2,16 +2,16 @@
 	"name": "livestock_bronze_silver_source",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "JobsAzureBlobStorage",
+			"referenceName": "AzureDataLakeStorage1",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "Json",
 		"typeProperties": {
 			"location": {
-				"type": "AzureBlobStorageLocation",
+				"type": "AzureBlobFSLocation",
 				"folderPath": "Bronze/live_stock_data",
-				"container": "team7container"
+				"fileSystem": "team7container"
 			}
 		},
 		"schema": {
