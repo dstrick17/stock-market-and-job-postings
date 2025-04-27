@@ -1,0 +1,59 @@
+{
+	"name": "livestock_bronze_silver_source",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "JobsAzureBlobStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "Bronze/live_stock_data",
+				"container": "team7container"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"company": {
+					"type": "string"
+				},
+				"symbol": {
+					"type": "string"
+				},
+				"date": {
+					"type": "string"
+				},
+				"time_retrieved": {
+					"type": "string"
+				},
+				"open": {
+					"type": "string"
+				},
+				"high": {
+					"type": "string"
+				},
+				"low": {
+					"type": "string"
+				},
+				"close": {
+					"type": "string"
+				},
+				"volume": {
+					"type": "string"
+				},
+				"EventProcessedUtcTime": {
+					"type": "string"
+				},
+				"PartitionId": {
+					"type": "integer"
+				},
+				"EventEnqueuedUtcTime": {
+					"type": "string"
+				}
+			}
+		}
+	}
+}

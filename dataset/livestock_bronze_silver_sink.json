@@ -1,0 +1,19 @@
+{
+	"name": "livestock_bronze_silver_sink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "Silver/live_stock_data",
+				"fileSystem": "team7container"
+			}
+		},
+		"schema": {}
+	}
+}
