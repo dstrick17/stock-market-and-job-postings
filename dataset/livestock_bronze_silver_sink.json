@@ -10,6 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": "@concat(formatDateTime(utcnow(), 'yyyy-MM-dd'), '_', pipeline().RunId, '.json')",
 				"folderPath": "Silver/live_stock_data",
 				"fileSystem": "team7container"
 			}
