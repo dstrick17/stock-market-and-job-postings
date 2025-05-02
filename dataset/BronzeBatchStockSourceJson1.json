@@ -14,6 +14,2035 @@
 				"fileSystem": "team7container"
 			}
 		},
-		"schema": {}
+		"schema": {
+			"type": "object",
+			"properties": {
+				"Meta Data": {
+					"type": "object",
+					"properties": {
+						"1. Information": {
+							"type": "string"
+						},
+						"2. Symbol": {
+							"type": "string"
+						},
+						"3. Last Refreshed": {
+							"type": "string"
+						},
+						"4. Output Size": {
+							"type": "string"
+						},
+						"5. Time Zone": {
+							"type": "string"
+						}
+					}
+				},
+				"Time Series (Daily)": {
+					"type": "object",
+					"properties": {
+						"2025-04-17": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-04-16": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-04-15": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-04-14": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-04-11": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-04-10": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-04-09": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-04-08": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-04-07": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-04-04": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-04-03": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-04-02": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-04-01": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-03-31": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-03-28": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-03-27": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-03-26": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-03-25": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-03-24": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-03-21": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-03-20": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-03-19": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-03-18": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-03-17": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-03-14": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-03-13": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-03-12": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-03-11": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-03-10": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-03-07": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-03-06": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-03-05": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-03-04": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-03-03": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-02-28": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-02-27": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-02-26": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-02-25": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-02-24": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-02-21": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-02-20": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-02-19": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-02-18": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-02-14": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-02-13": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-02-12": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-02-11": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-02-10": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-02-07": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-02-06": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-02-05": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-02-04": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-02-03": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-01-31": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-01-30": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-01-29": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-01-28": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-01-27": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-01-24": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-01-23": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-01-22": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-01-21": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-01-17": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-01-16": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-01-15": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-01-14": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-01-13": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-01-10": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-01-08": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-01-07": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-01-06": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-01-03": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2025-01-02": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2024-12-31": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2024-12-30": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2024-12-27": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2024-12-26": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2024-12-24": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2024-12-23": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2024-12-20": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2024-12-19": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2024-12-18": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2024-12-17": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2024-12-16": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2024-12-13": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2024-12-12": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2024-12-11": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2024-12-10": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2024-12-09": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2024-12-06": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2024-12-05": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2024-12-04": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2024-12-03": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2024-12-02": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2024-11-29": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2024-11-27": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2024-11-26": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2024-11-25": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2024-11-22": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						},
+						"2024-11-21": {
+							"type": "object",
+							"properties": {
+								"1. open": {
+									"type": "string"
+								},
+								"2. high": {
+									"type": "string"
+								},
+								"3. low": {
+									"type": "string"
+								},
+								"4. close": {
+									"type": "string"
+								},
+								"5. volume": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }
