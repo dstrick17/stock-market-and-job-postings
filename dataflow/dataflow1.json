@@ -6,60 +6,41 @@
 			"sources": [
 				{
 					"dataset": {
-						"referenceName": "livestock_silver_gold_source",
+						"referenceName": "BronzeBatchStockSourceJson1",
 						"type": "DatasetReference"
 					},
 					"name": "source1"
 				}
 			],
-			"sinks": [
-				{
-					"dataset": {
-						"referenceName": "livestock_silver_gold_sink_Parquet1",
-						"type": "DatasetReference"
-					},
-					"name": "sink1"
-				}
-			],
+			"sinks": [],
 			"transformations": [
 				{
-					"name": "derivedColumn1ChangeDataTypes"
+					"name": "flatten1"
 				}
 			],
 			"scriptLines": [
 				"source(output(",
-				"          company as string,",
-				"          symbol as string,",
-				"          date as string,",
-				"          time_retrieved as string,",
-				"          open as string,",
-				"          high as string,",
-				"          low as string,",
-				"          close as string,",
-				"          volume as string,",
-				"          EventProcessedUtcTime as string,",
-				"          PartitionId as integer,",
-				"          EventEnqueuedUtcTime as string",
+				"          {Meta Data} as ({1. Information} as string, {2. Symbol} as string, {3. Last Refreshed} as string, {4. Output Size} as string, {5. Time Zone} as string),",
+				"          {Time Series (Daily)} as ({2025-04-17} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-04-16} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-04-15} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-04-14} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-04-11} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-04-10} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-04-09} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-04-08} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-04-07} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-04-04} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-04-03} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-04-02} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-04-01} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-03-31} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-03-28} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-03-27} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-03-26} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-03-25} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-03-24} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-03-21} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-03-20} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-03-19} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-03-18} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-03-17} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-03-14} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-03-13} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-03-12} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-03-11} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-03-10} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-03-07} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-03-06} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-03-05} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-03-04} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-03-03} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-02-28} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-02-27} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-02-26} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-02-25} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-02-24} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-02-21} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-02-20} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-02-19} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-02-18} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-02-14} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-02-13} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-02-12} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-02-11} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-02-10} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-02-07} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-02-06} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-02-05} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-02-04} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-02-03} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-01-31} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-01-30} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-01-29} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-01-28} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-01-27} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-01-24} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-01-23} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-01-22} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-01-21} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-01-17} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-01-16} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-01-15} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-01-14} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-01-13} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-01-10} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-01-08} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-01-07} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-01-06} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-01-03} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2025-01-02} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2024-12-31} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2024-12-30} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2024-12-27} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2024-12-26} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2024-12-24} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2024-12-23} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2024-12-20} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2024-12-19} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2024-12-18} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2024-12-17} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2024-12-16} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2024-12-13} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2024-12-12} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2024-12-11} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2024-12-10} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2024-12-09} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2024-12-06} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2024-12-05} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2024-12-04} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2024-12-03} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2024-12-02} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2024-11-29} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2024-11-27} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2024-11-26} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2024-11-25} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2024-11-22} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string), {2024-11-21} as ({1. open} as string, {2. high} as string, {3. low} as string, {4. close} as string, {5. volume} as string))",
 				"     ),",
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false,",
 				"     documentForm: 'documentPerLine') ~> source1",
-				"source1 derive(open = toFloat(open),",
-				"          high = toFloat(high),",
-				"          low = toFloat(low),",
-				"          close = toFloat(close),",
-				"          volume = toInteger(volume),",
-				"          date = toDate(date),",
-				"          time_retrieved = toTimestamp(time_retrieved)) ~> derivedColumn1ChangeDataTypes",
-				"derivedColumn1ChangeDataTypes sink(allowSchemaDrift: true,",
-				"     validateSchema: false,",
-				"     format: 'parquet',",
-				"     umask: 0022,",
-				"     preCommands: [],",
-				"     postCommands: [],",
-				"     skipDuplicateMapInputs: true,",
-				"     skipDuplicateMapOutputs: true) ~> sink1"
+				"source1 foldDown(unroll(),",
+				"     mapColumn(",
+				"          {Meta Data},",
+				"          {Time Series (Daily)},",
+				"          date = key,",
+				"          open = {value['1. open']},",
+				"          high = {value['2. high']},",
+				"          low = {value['3. low']},",
+				"          close = {value['4. close']},",
+				"          volume = {value['5. volume']},",
+				"          symbol = {byName('Meta Data')['2. Symbol']}",
+				"     ),",
+				"     skipDuplicateMapInputs: false,",
+				"     skipDuplicateMapOutputs: false) ~> flatten1"
 			]
 		}
 	}
