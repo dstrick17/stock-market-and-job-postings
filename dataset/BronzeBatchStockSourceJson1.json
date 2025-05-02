@@ -10,7 +10,6 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "*.json",
 				"folderPath": "Bronze/batch_stock_data",
 				"fileSystem": "team7container"
 			}
