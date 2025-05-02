@@ -12,7 +12,19 @@
 					"name": "source1"
 				}
 			],
-			"sinks": [],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "BatchStockGoldSinkParquet1",
+						"type": "DatasetReference"
+					},
+					"name": "sink1",
+					"rejectedDataLinkedService": {
+						"referenceName": "AzureDataLakeStorage1",
+						"type": "LinkedServiceReference"
+					}
+				}
+			],
 			"transformations": [
 				{
 					"name": "flatten1"
@@ -40,7 +52,31 @@
 				"     ),",
 				"     partitionBy('roundRobin', 2),",
 				"     skipDuplicateMapInputs: false,",
-				"     skipDuplicateMapOutputs: false) ~> flatten1"
+				"     skipDuplicateMapOutputs: false) ~> flatten1",
+				"flatten1 sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     input(",
+				"          company as string,",
+				"          symbol as string,",
+				"          date as date,",
+				"          time_retrieved as timestamp,",
+				"          open as float,",
+				"          high as float,",
+				"          low as float,",
+				"          close as float,",
+				"          volume as integer,",
+				"          EventProcessedUtcTime as string,",
+				"          PartitionId as integer,",
+				"          EventEnqueuedUtcTime as string",
+				"     ),",
+				"     format: 'parquet',",
+				"     partitionFileNames:[''],",
+				"     umask: 0022,",
+				"     preCommands: [],",
+				"     postCommands: [],",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true,",
+				"     partitionBy('hash', 1)) ~> sink1"
 			]
 		}
 	}

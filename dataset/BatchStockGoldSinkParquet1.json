@@ -1,0 +1,69 @@
+{
+	"name": "BatchStockGoldSinkParquet1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "Gold",
+				"fileSystem": "team7container"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "company",
+				"type": "UTF8"
+			},
+			{
+				"name": "symbol",
+				"type": "UTF8"
+			},
+			{
+				"name": "date",
+				"type": "DATE"
+			},
+			{
+				"name": "time_retrieved",
+				"type": "INT96"
+			},
+			{
+				"name": "open",
+				"type": "FLOAT"
+			},
+			{
+				"name": "high",
+				"type": "FLOAT"
+			},
+			{
+				"name": "low",
+				"type": "FLOAT"
+			},
+			{
+				"name": "close",
+				"type": "FLOAT"
+			},
+			{
+				"name": "volume",
+				"type": "INT32"
+			},
+			{
+				"name": "EventProcessedUtcTime",
+				"type": "UTF8"
+			},
+			{
+				"name": "PartitionId",
+				"type": "INT32"
+			},
+			{
+				"name": "EventEnqueuedUtcTime",
+				"type": "UTF8"
+			}
+		]
+	}
+}
