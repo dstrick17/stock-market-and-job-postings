@@ -13,7 +13,14 @@
 				}
 			],
 			"sinks": [],
-			"transformations": [],
+			"transformations": [
+				{
+					"name": "SelectSymbol1"
+				},
+				{
+					"name": "FlattenTimeSeries"
+				}
+			],
 			"scriptLines": [
 				"source(output(",
 				"          {Meta Data} as ({1. Information} as string, {2. Symbol} as string, {3. Last Refreshed} as string, {4. Output Size} as string, {5. Time Zone} as string),",
@@ -22,7 +29,22 @@
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false,",
-				"     documentForm: 'documentPerLine') ~> BatchStocksSource1"
+				"     documentForm: 'documentPerLine') ~> BatchStocksSource1",
+				"BatchStocksSource1 select(mapColumn(",
+				"          {Meta Data},",
+				"          {Time Series (Daily)},",
+				"          Symbol = {Meta Data}.{2. Symbol}",
+				"     ),",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> SelectSymbol1",
+				"SelectSymbol1 foldDown(unroll(),",
+				"     mapColumn(",
+				"          {Meta Data},",
+				"          {Time Series (Daily)},",
+				"          Symbol",
+				"     ),",
+				"     skipDuplicateMapInputs: false,",
+				"     skipDuplicateMapOutputs: false) ~> FlattenTimeSeries"
 			]
 		}
 	}
