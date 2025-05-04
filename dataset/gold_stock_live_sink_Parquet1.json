@@ -1,5 +1,5 @@
 {
-	"name": "livestock_silver_gold_sink_Parquet1",
+	"name": "gold_stock_live_sink_Parquet1",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLakeStorage1",

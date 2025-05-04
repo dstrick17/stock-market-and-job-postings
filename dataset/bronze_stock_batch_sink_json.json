@@ -1,5 +1,5 @@
 {
-	"name": "bronze_stock_combined_sink",
+	"name": "bronze_stock_batch_sink_json",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLakeStorage1",

@@ -16,7 +16,7 @@
 			"sinks": [
 				{
 					"dataset": {
-						"referenceName": "livestock_silver_gold_sink_Parquet1",
+						"referenceName": "gold_stock_live_sink_Parquet1",
 						"type": "DatasetReference"
 					},
 					"name": "sink1"

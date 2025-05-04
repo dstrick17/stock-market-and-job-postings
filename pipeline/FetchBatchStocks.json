@@ -44,7 +44,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "bronze_stock_combined_sink",
+						"referenceName": "bronze_stock_batch_sink_json",
 						"type": "DatasetReference"
 					}
 				]

@@ -1,0 +1,39 @@
+{
+	"name": "df_stock_live_to_sliver",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "bronze_stock_live_source_json",
+						"type": "DatasetReference"
+					},
+					"name": "source1"
+				}
+			],
+			"sinks": [],
+			"transformations": [],
+			"scriptLines": [
+				"source(output(",
+				"          company as string,",
+				"          symbol as string,",
+				"          date as string,",
+				"          time_retrieved as string,",
+				"          open as string,",
+				"          high as string,",
+				"          low as string,",
+				"          close as string,",
+				"          volume as string,",
+				"          EventProcessedUtcTime as string,",
+				"          PartitionId as integer,",
+				"          EventEnqueuedUtcTime as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false,",
+				"     documentForm: 'documentPerLine') ~> source1"
+			]
+		}
+	}
+}
