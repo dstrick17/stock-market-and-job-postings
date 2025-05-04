@@ -38,7 +38,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "bronze_stock_batch_source",
+						"referenceName": "bronze_stock_batch_source_json",
 						"type": "DatasetReference"
 					}
 				],
