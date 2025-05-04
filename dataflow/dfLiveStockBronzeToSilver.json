@@ -24,6 +24,9 @@
 			"transformations": [
 				{
 					"name": "derivedColumn1"
+				},
+				{
+					"name": "select1"
 				}
 			],
 			"scriptLines": [
@@ -50,7 +53,18 @@
 				"          low = toFloat(low),",
 				"          close = toFloat(close),",
 				"          volume = toLong(volume)) ~> derivedColumn1",
-				"derivedColumn1 sink(allowSchemaDrift: true,",
+				"derivedColumn1 select(mapColumn(",
+				"          company,",
+				"          symbol,",
+				"          date,",
+				"          open,",
+				"          high,",
+				"          low,",
+				"          close",
+				"     ),",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> select1",
+				"select1 sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     format: 'parquet',",
 				"     umask: 0022,",
