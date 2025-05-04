@@ -1,0 +1,15 @@
+{
+	"name": "df_stock_to_gold",
+	"properties": {
+		"description": "live stock data to gold",
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [],
+			"sinks": [],
+			"transformations": [],
+			"scriptLines": [
+				""
+			]
+		}
+	}
+}

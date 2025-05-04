@@ -45,12 +45,6 @@
 						"referenceName": "livestock_bronze_silver_source",
 						"type": "DatasetReference"
 					}
-				],
-				"outputs": [
-					{
-						"referenceName": "livestock_bronze_silver_sink",
-						"type": "DatasetReference"
-					}
 				]
 			}
 		],
