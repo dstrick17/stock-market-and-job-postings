@@ -4,11 +4,52 @@
 		"description": "live stock data to gold",
 		"type": "MappingDataFlow",
 		"typeProperties": {
-			"sources": [],
-			"sinks": [],
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "livestock_silver_gold_source",
+						"type": "DatasetReference"
+					},
+					"name": "source1"
+				}
+			],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "livestock_silver_gold_sink_Parquet1",
+						"type": "DatasetReference"
+					},
+					"name": "sink1"
+				}
+			],
 			"transformations": [],
 			"scriptLines": [
-				""
+				"source(output(",
+				"          company as string,",
+				"          symbol as string,",
+				"          date as string,",
+				"          time_retrieved as string,",
+				"          open as string,",
+				"          high as string,",
+				"          low as string,",
+				"          close as string,",
+				"          volume as string,",
+				"          EventProcessedUtcTime as string,",
+				"          PartitionId as integer,",
+				"          EventEnqueuedUtcTime as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false,",
+				"     documentForm: 'documentPerLine') ~> source1",
+				"source1 sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     format: 'parquet',",
+				"     umask: 0022,",
+				"     preCommands: [],",
+				"     postCommands: [],",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> sink1"
 			]
 		}
 	}
