@@ -1,0 +1,20 @@
+{
+	"name": "silver_stock_combined_parquet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "Silver/combined_stock_data",
+				"fileSystem": "team7container"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
