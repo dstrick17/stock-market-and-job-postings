@@ -1,5 +1,5 @@
 {
-	"name": "AllStockSource",
+	"name": "bronze_stock_batch_source",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AlphaStockServer",

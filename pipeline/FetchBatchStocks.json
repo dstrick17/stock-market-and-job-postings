@@ -38,13 +38,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "AllStockSource",
+						"referenceName": "bronze_stock_batch_source",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "AllStockSinkBronze",
+						"referenceName": "bronze_stock_combined_sink",
 						"type": "DatasetReference"
 					}
 				]
