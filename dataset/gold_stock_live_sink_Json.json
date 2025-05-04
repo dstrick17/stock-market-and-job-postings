@@ -1,0 +1,19 @@
+{
+	"name": "gold_stock_live_sink_Json",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "Gold/live_stock_data",
+				"fileSystem": "team7container"
+			}
+		},
+		"schema": {}
+	}
+}
