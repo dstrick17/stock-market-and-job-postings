@@ -6,7 +6,7 @@
 		"pipelines": [
 			{
 				"pipelineReference": {
-					"referenceName": "livestock-silver-gold",
+					"referenceName": "LiveStockSilverToGold",
 					"type": "PipelineReference"
 				}
 			}
