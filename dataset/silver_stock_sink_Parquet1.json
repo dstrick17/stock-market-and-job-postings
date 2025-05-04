@@ -10,6 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": "*.json",
 				"folderPath": "Silver/combined_stock_data",
 				"fileSystem": "team7container"
 			},
