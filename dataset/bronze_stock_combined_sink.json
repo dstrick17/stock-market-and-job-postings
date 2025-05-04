@@ -1,5 +1,5 @@
 {
-	"name": "AllStockSinkBronze",
+	"name": "bronze_stock_combined_sink",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLakeStorage1",
