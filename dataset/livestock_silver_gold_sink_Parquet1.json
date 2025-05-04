@@ -10,7 +10,6 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "date={date}",
 				"folderPath": "Gold/live_stock_data",
 				"fileSystem": "team7container"
 			},
