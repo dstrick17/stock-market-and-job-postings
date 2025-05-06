@@ -1,0 +1,78 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "datastores_azureml_globaldatasets_secretsType": {
+            "value": null
+        },
+        "datastores_workspaceartifactstore_secretsType": {
+            "value": null
+        },
+        "datastores_workspaceblobstore_secretsType": {
+            "value": null
+        },
+        "datastores_workspacefilestore_secretsType": {
+            "value": null
+        },
+        "datastores_workspaceworkingdirectory_secretsType": {
+            "value": null
+        },
+        "vulnerabilityAssessments_Default_storageContainerPath": {
+            "value": null
+        },
+        "vulnerabilityAssessments_Default_storageContainerPath_1": {
+            "value": null
+        },
+        "connections_azureblob_name": {
+            "value": null
+        },
+        "sites_Team7FunctionApp_name": {
+            "value": null
+        },
+        "servers_ds562team7project_name": {
+            "value": null
+        },
+        "workspaces_team7synapse_name": {
+            "value": null
+        },
+        "namespaces_Team7Namespace_name": {
+            "value": null
+        },
+        "vaults_adzunaml2249347247_name": {
+            "value": null
+        },
+        "serverfarms_ASP_DS562Team7_a6d5_name": {
+            "value": null
+        },
+        "components_adzunaml9307697534_name": {
+            "value": null
+        },
+        "storageAccounts_team7storageacc_name": {
+            "value": null
+        },
+        "storageAccounts_adzunaclustering_name": {
+            "value": null
+        },
+        "workflows_adzuna2hrstrigger_logicapp_name": {
+            "value": null
+        },
+        "workspaces_adzunaml_name": {
+            "value": null
+        },
+        "streamingjobs_live_stock_data_name": {
+            "value": null
+        },
+        "workspaces_team7_workspace_name": {
+            "value": null
+        },
+        "workspaces_adzunaml5406443017_name": {
+            "value": null
+        },
+        "smartdetectoralertrules_failure_anomalies___adzunaml9307697534_name": {
+            "value": null
+        },
+        "actiongroups_application_insights_smart_detection_externalid": {
+            "value": null
+        }
+    }
+}
