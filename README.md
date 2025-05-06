@@ -65,6 +65,8 @@ Dashboard link - https://app.powerbi.com/view?r=eyJrIjoiYjVmNDZiOGItNmZmNi00Mzk0
 
 The Power BI report includes:
 - Sector trends over time
+- Hiring trends in relation to stock market
+- Hiring trends vs market volatility
 - Salary prediction model results
 - Interactive comparison of job postings vs. stock price (e.g., QQQ vs IT jobs)
 
