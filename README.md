@@ -1,6 +1,7 @@
 # Job & Stock Market Insight Platform (Azure Data Pipeline Project)
 
 This project explores the relationship between job postings and stock market trends using a scalable Azure data pipeline. It integrates real-time and batch data from the Adzuna API (job listings) and Alpha Vantage API (stock data), processes it through a medallion architecture (Bronze → Silver → Gold), and enables downstream analysis via Azure ML and Power BI.
+Dashboard link - https://app.powerbi.com/view?r=eyJrIjoiYjVmNDZiOGItNmZmNi00Mzk0LTgzN2MtYTZhYmRmZmJmMzc3IiwidCI6ImQ1N2QzMmNjLWMxMjEtNDg4Zi1iMDdiLWRmZTcwNTY4MGM3MSIsImMiOjN9
 
 ---
 
